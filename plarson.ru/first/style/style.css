@@ -1,0 +1,103 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-indent: 5px;
+}
+
+li {
+    list-style: none;
+    font-size: 20px;
+}
+
+li:not(:last-child) {
+    border-bottom: 2px solid darkgray;
+}
+
+#main-window {
+    width: 600px;
+    height: 430px;
+    margin: auto;
+
+    background-color: white;
+    background-image: linear-gradient(45deg, lightgray 25%, transparent 25%, transparent 74%, lightgray 75%, lightgray),
+    linear-gradient(45deg, lightgray 25%, transparent 25%, transparent 74%, lightgray 75%, lightgray);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+}
+
+#chat {
+    width: 100%;
+    height: 100%;
+
+}
+
+#shapka {
+    border: 5px solid red;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+/*Main Window Style*/
+#main {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#main > div {
+    float: left;
+    height: 100%;
+}
+
+/*Left Side Users List*/
+#users {
+    border: 5px solid orange;
+    width: 200px;
+    overflow-y: auto;
+}
+
+
+/*Chat Window Style*/
+#right-chat {
+    border: 5px solid purple;
+    width: calc(100% - 220px);
+    overflow-y: auto;
+
+}
+#right-chat>div{
+    width: 60%;
+}
+
+.recipient{
+    float: left;
+    background-color: darkgray;
+}
+
+.sender{
+    float: right;
+    background-color: slategray;
+}
+
+/*Footer Style*/
+#podval {
+    border: 5px solid green;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+
+/*Scroll bar style*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    border: 4px solid transparent;
+    background-clip: content-box;
+    opacity: 1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkgray;
+}
